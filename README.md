@@ -1,6 +1,6 @@
 # Ledger Case Study
 
-Hello! My name is Will Sparrow and these instructions will show you how to run my application. Please message me if you have any questions. Enjoy!
+Hello! My name is Will Sparrow and these instructions will show you how to run my application. Please message me if you have any questions.
 
 ## Prerequisites
 * Python
@@ -33,22 +33,20 @@ If you run into an error, it is most likely because you have not included the co
 _Recommended: For the backend/frontend, I would recommend opening up Visual Studio Code (or another editor) and splitting the Terminal/Command Prmopt into two separate panes for the following steps._
 
 ### Start Backend
-Navigate to the root directory `backend` within the terminal of your editor. Execute the command `python manage.py runserver`. You will notice in the terminal window some things running in the terminal/command prompt window, and you can navigate to the below urls to see the views we have created.
+Navigate to the root directory `backend` within the terminal/command prompt inside your editor. Execute the command `python manage.py runserver`. You will notice some things running in the terminal/command prompt window and once finished, you can navigate to the below urls to see the views we have created.
 
-* http://127.0.0.1:8000/api/policies/ - Endpoint displaying all of the auto policies from the csv. It is currently paginated and only returning 100 records at a time due to performance reasons.
-* http://127.0.0.1:8000/ - Aggregated view (sum) of the total claims found across all of the policies.
-* http://127.0.0.1:8000/api/policies/?search=[marital_status] - Filters policies by marital status. For example, if you want to see all policies that belong to married people, then you can change the term at the end to `?search=Married`. Currently, this is the only field that can be filtered on.
+* `http://127.0.0.1:8000/api/policies/` - Endpoint displaying all of the auto policies from the csv. It is currently paginated and only returning 100 records at a time due to performance reasons.
+* `http://127.0.0.1:8000/` - Aggregated view (sum) of the total claims found across all of the policies.
+* `http://127.0.0.1:8000/api/policies/?search=[marital_status]` - Filters policies by marital status. For example, if you want to see all policies that belong to married people, then you can change the term at the end to `?search=Married`. Currently, this is the only field that can be filtered on.
+
+Ensure that the backend is still running when you look to start the front end in the following step.
 
 ### Start Frontend
-Ensure that you have the front end running by leaving that first split terminal window untouched.
+Navigate to the root directory `frontend` of the repository within a different terminal/command prompt inside your editor. To grab the necessary dependencies listed in the _packages.json_, execute
 
-Change directories into the frontend root directory.
+`npm install` 
 
-Run npm install to download the necessary dependinces specified in packages.json. This should give you everything you need to run front end.
-
-In that second terminal window, ensure you are still in that second terminal window and execute npm start.
-
-Now you should see the front end applicaiton and should be able to click across the different views to see the different funtionality. 
+After that command has finished running, execute `npm start`. This will start the development server and will dispay the application at `http://localhost:3000/`. Navigate across the different views within the navigation bar to see the views/functionality associated with the application.  
 
 Enjoy!
 
