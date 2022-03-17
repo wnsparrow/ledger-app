@@ -11,7 +11,7 @@ Hello! My name is Will Sparrow and this README will give you more details on the
 #### Clone Repo
 * In the top right corner above this README, click the 'Code' dropdown highlighted in green and copy the web URL (beginning with HTTPS). Open up a terminal/command prompt on your computer or within your favorite editor/IDE (e.g., Visual Studio Code) and navigate to the folder where you would like to place this project. For example, if you would like to place the app within a projects folder, navigate using the cd commands like below and execute the commands to clone the repo.
 
-![test-image](screenshots/file-structure-example.png "Test Description")
+![test-image](screenshots/file-structure-example.png =100x100)
 
 #### Create Virutal Environment
 * We will look to create a virtual environment so that we can manage our dependencies responsibly. Navigate to or create any folder you please within the terminal/command prompt and create a virtual environment by executing
