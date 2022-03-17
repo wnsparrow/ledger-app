@@ -7,30 +7,28 @@ Hello! My name is Will Sparrow and these instructions will show you how to run m
   * I am assuming those viewing this have Python 3 installed. If you do not have Python 3 (execute `python --version` in a terminal/command prompt to check), then download [Python](https://www.python.org/downloads/) from the website.
 * Node
   * Ensure that you have the most up to date version of Node installed (execute `node --version` in a terminal/command prompt to check). Download [Node](https://nodejs.org/en/) website. from the website if you do not have it installed.
+* Terminal/Command Prompt
+  * We will be navigating in and around folders on our machines which requires some basic knowledge of navigating a terminal/command prompt. See these helpful guides for [Windows](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/) or [Mac/Linux](https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/) users.
 
-## Running the application
+### Clone Repo
+In the top right corner above this README, click the 'Code' dropdown highlighted in green and copy the web URL (beginning with HTTPS). Open up a terminal/command prompt on your computer or within your favorite editor/IDE (e.g., Visual Studio Code) and navigate to the folder where you would like to place this project. Execute `git clone pasted_web_url` to clone the repository to your local machine.
 
-### Prerequisites
-#### Node
-* Ensure that you have the most up to date version of Node installed. You can check if you have it installed by opening up a terminal window/command prompt and executing `node --version` or `node -v`. If you do not have it installed, download the most stable version from [Node's](https://nodejs.org/en/) website.
-
-#### Clone Repo
-* In the top right corner above this README, click the 'Code' dropdown highlighted in green and copy the web URL (beginning with HTTPS). Open up a terminal/command prompt on your computer or within your favorite editor/IDE (e.g., Visual Studio Code) and navigate to the folder where you would like to place this project. For example, if you would like to place the app within a projects folder, navigate using the cd commands like below and execute the commands to clone the repo.
-
-![test-image](screenshots/file-structure-example.png =100x100)
-
-#### Create Virutal Environment
-* We will look to create a virtual environment so that we can manage our dependencies responsibly. Navigate to or create any folder you please within the terminal/command prompt and create a virtual environment by executing
+### Create Virutal Environment
+We will also look to create a virtual environment so that we can manage our dependencies responsibly. Navigate to or create any folder you please within the terminal/command prompt and create a virtual environment by executing
 
 `python -m venv name_of_env`
 
-* Once that is done, activate the virtual environment by executing the command
+Then activate the virtual environment by executing
 
 `source path_to_env_name/bin/activate`
 
-* Now that you have created and activated virtual environment, let's grab the dependencies needed for this project. All you need to do is execute the command `pip install -r path_to_requirements.txt/requirements.txt`. This should grab all the necesssary dependencies, you can check that there are some listed by executing `pip freeze`.
+Finally, to grab the dependencies associated with this project, execute
 
-## Application
+`pip install -r path_to_requirements.txt`.
+
+If you run into an error, it is most likely because you have not included the correct path to _requirements.txt_. Ensure that you double check the correct file path. To check that the necesssary packages/libraries have downloaded, execute `pip freeze` and you should see some listed (e.g., _django_, _pandas_, _etc._)
+
+## Running the Application
 
 ### Start Backend
 Here I may be a little bit more descriptive. Split a terminal window into two within VS code.
