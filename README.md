@@ -4,9 +4,9 @@ Hello! My name is Will Sparrow and these instructions will show you how to run m
 
 ## Prerequisites
 * Python
-  * I am assuming those viewing this have Python 3 installed. If you do not have Python 3 (execute `python --version` in a terminal/command prompt to check), then download [Python](https://www.python.org/downloads/) from the website.
+  * I am assuming those viewing this have Python 3 installed. If you do not have Python 3 (execute `python --version` in a terminal/command prompt to check), download [Python](https://www.python.org/downloads/) from the website.
 * Node
-  * Ensure that you have the most up to date version of Node installed (execute `node --version` in a terminal/command prompt to check). Download [Node](https://nodejs.org/en/) from the website if you do not have it installed.
+  * Ensure that you have the most up to date version of Node installed (execute `node --version` in a terminal/command prompt to check). If you do not have dDownload [Node](https://nodejs.org/en/) from the website.
 * Terminal/Command Prompt
   * We will be navigating in and around folders on our machines which requires some basic knowledge of navigating a terminal/command prompt. See these helpful guides for [Windows](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/) or [Mac/Linux](https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/) users.
 
