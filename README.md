@@ -23,3 +23,30 @@ Hello! My name is Will Sparrow and this README will give you more details on the
 `source path_to_env_name/bin/activate`
 
 * Now that you have created and activated virtual environment, let's grab the dependencies needed for this project. All you need to do is execute the command `pip install -r path_to_requirements.txt/requirements.txt`. This should grab all the necesssary dependencies, you can check that there are some listed by executing `pip freeze`.
+
+## Application
+
+### Start Backend
+Here I may be a little bit more descriptive. Split a terminal window into two within VS code.
+
+On the lefthand terminal, change directories into the root directory _backend_. Execute 
+
+`python manage.py runserver`. Navigate to http://127.0.0.1:8000/ to see an aggregated view of the total claims found in the auto_policies.csv. Navigate to
+http://127.0.0.1:8000/api/policies/ to see the endpoint for all of the auto policies. It is paginated and is returning only 100 records at a time for performance reasons.
+
+Right now, you can only filter by marital status. Add ?search=Married or ?search=Single after api/policies to filter data.
+
+### Start Frontend
+Ensure that you have the front end running by leaving that first split terminal window untouched.
+
+Change directories into the frontend root directory.
+
+Run npm install to download the necessary dependinces specified in packages.json. This should give you everything you need to run front end.
+
+In that second terminal window, ensure you are still in that second terminal window and execute npm start.
+
+Now you should see the front end applicaiton and should be able to click across the different views to see the different funtionality. 
+
+Enjoy!
+
+
