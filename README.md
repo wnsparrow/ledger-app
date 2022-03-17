@@ -1,6 +1,12 @@
 # Ledger Case Study
 
-Hello! My name is Will Sparrow and this README will give you more details on the "app" I have built, including additional context regarding the associated code, how to run the app, where to locate certain files, etc. Please reach out to me if you have any questions. Thank you.
+Hello! My name is Will Sparrow and these instructions will show you how to run my application. Please message me if you have any questions. Enjoy!
+
+## Prerequisites
+* Python
+  * I am assuming those viewing this have Python 3 installed. If you do not have Python 3 (execute `python --version` in a terminal/command prompt to check), then download [Python](https://www.python.org/downloads/) from the website.
+* Node
+  * Ensure that you have the most up to date version of Node installed (execute `node --version` in a terminal/command prompt to check). Download [Node](https://nodejs.org/en/) website. from the website if you do not have it installed.
 
 ## Running the application
 
