@@ -14,7 +14,6 @@ function App() {
       const data = await response.json();
 
       setData(data.results);
-      console.log(data.results)
     }
   }, [])
 
