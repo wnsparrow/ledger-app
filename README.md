@@ -6,7 +6,7 @@ Hello! My name is Will Sparrow and these instructions will show you how to run m
 * Python
   * I am assuming those viewing this have Python 3 installed. If you do not have Python 3 (execute `python --version` in a terminal/command prompt to check), then download [Python](https://www.python.org/downloads/) from the website.
 * Node
-  * Ensure that you have the most up to date version of Node installed (execute `node --version` in a terminal/command prompt to check). Download [Node](https://nodejs.org/en/) website. from the website if you do not have it installed.
+  * Ensure that you have the most up to date version of Node installed (execute `node --version` in a terminal/command prompt to check). Download [Node](https://nodejs.org/en/) from the website if you do not have it installed.
 * Terminal/Command Prompt
   * We will be navigating in and around folders on our machines which requires some basic knowledge of navigating a terminal/command prompt. See these helpful guides for [Windows](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/) or [Mac/Linux](https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/) users.
 
@@ -30,15 +30,14 @@ If you run into an error, it is most likely because you have not included the co
 
 ## Running the Application
 
+_Recommended: For the backend/frontend, I would recommend opening up Visual Studio Code (or another editor) and splitting the Terminal/Command Prmopt into two separate panes for the following steps._
+
 ### Start Backend
-Here I may be a little bit more descriptive. Split a terminal window into two within VS code.
+Navigate to the root directory `backend` within the terminal of your editor. Execute the command `python manage.py runserver`. You will notice in the terminal window some things running in the terminal/command prompt window, and you can navigate to the below urls to see the views we have created.
 
-On the lefthand terminal, change directories into the root directory _backend_. Execute 
-
-`python manage.py runserver`. Navigate to http://127.0.0.1:8000/ to see an aggregated view of the total claims found in the auto_policies.csv. Navigate to
-http://127.0.0.1:8000/api/policies/ to see the endpoint for all of the auto policies. It is paginated and is returning only 100 records at a time for performance reasons.
-
-Right now, you can only filter by marital status. Add ?search=Married or ?search=Single after api/policies to filter data.
+* http://127.0.0.1:8000/api/policies/ - Endpoint displaying all of the auto policies from the csv. It is currently paginated and only returning 100 records at a time due to performance reasons.
+* http://127.0.0.1:8000/ - Aggregated view (sum) of the total claims found across all of the policies.
+* http://127.0.0.1:8000/api/policies/?search=[marital_status] - Filters policies by marital status. For example, if you want to see all policies that belong to married people, then you can change the term at the end to `?search=Married`. Currently, this is the only field that can be filtered on.
 
 ### Start Frontend
 Ensure that you have the front end running by leaving that first split terminal window untouched.
