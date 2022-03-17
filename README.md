@@ -1,6 +1,6 @@
 # Ledger Application
 
-Hello! My name is Will Sparrow and these instructions will show you how to run my application. Please message me if you have any questions.
+Hello! My name is Will Sparrow and these instructions will show you how to run my application. Please message me if you have questions.
 
 ## Prerequisites
 * Python
